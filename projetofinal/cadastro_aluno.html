@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Tarefa 1 - Módulo 5</title>
+	<link rel="stylesheet" type="text/css" href="css_cadastro_aluno/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script src="js_cadastro_aluno/script.js" type="text/javascript"></script>
+</head>
+<body>
+	<h2>Digite o nome e a nota de 10 alunos</h2>
+	<form action="#" method="post" accept-charset="utf-8" id="formularioCadastro" name="formulario">
+
+		<label> Nome: 
+			<input type="text" id="nome" name="nome" placeholder="Nome" required>
+		</label>	
+
+		<label> Nota: 
+			<input type="text" id="nota" name="nota" placeholder="0.0" required>
+		</label>
+
+		<label>
+			<input type="submit" id="adicionar" name="" value="Adicionar">
+		</label>
+
+	</form>
+	
+	<div id="botoes">
+		<button type="button" id="ordenarNota">Ordenar por maior nota</button>
+		<button type="button" id="ordenarNome">Ordenar por nome</button>
+		<button type="button" id="media">Mostrar Média</button>
+	</div>
+
+	<div id="alunos">
+		<fieldset>
+			<legend>Alunos Cadastrados  -  Nota</legend>
+			<ul id="nomeAluno"></ul>	
+			<ul id="notaAluno"></ul>
+			<span id="mediaAluno">  </span>
+		</fieldset>
+	</div>
+
+</body>
+</html>

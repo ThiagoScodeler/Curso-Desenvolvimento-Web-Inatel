@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Bandeira</title>
+	<link rel="stylesheet" href="css_bandeira/style.css">
+</head>
+<body>
+
+<div id="bandeiraAlinhar">
+
+	<h1>Bandeira da Alemanha</h1>
+	<canvas id="bandeira" width="720" height="480"></canvas>
+
+</div>
+	<script type="text/javascript" charset="utf-8" async defer>
+
+	var alemanha = document.getElementById("bandeira");
+
+	var retanguloPreto = alemanha.getContext("2d");
+	retanguloPreto.fillStyle="#000000";
+	retanguloPreto.fillRect(0,0,720,160);
+
+
+	var retanguloVermelho = alemanha.getContext("2d");
+	retanguloVermelho.fillStyle="#D00000";
+	retanguloVermelho.fillRect(0,160,720,160);
+
+
+	var retanguloAmarelo = alemanha.getContext("2d");
+	retanguloAmarelo.fillStyle="#FFCE00";
+	retanguloAmarelo.fillRect(0,320,720,160);
+
+</script>
+</body>
+</html>

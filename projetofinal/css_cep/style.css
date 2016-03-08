@@ -1,0 +1,37 @@
+h1{
+	color: #093F72;
+	font: 22px Trebuchet MS;
+	text-align: center;
+	font-style: italic;
+}
+
+fieldset {
+	width: 500px;
+	margin: 80px auto;
+	border-color: #093F72;
+	background-color: #CCC;
+}
+
+input[type=text] {
+	width: 300px;
+    height: 20px;
+    margin: 0 auto;
+    display: block;
+    float: center;
+}
+
+input[type=submit] {
+	background-color: #BDE;
+	font-size: 14px;
+	text-transform: uppercase;
+	width: 150px;
+    height: 30px;
+    margin: 10px auto;
+    display: block;
+    float: center;
+}
+
+input[type=submit]:hover {
+	background-color: #05203A;
+	color: #FFFFFF;
+}

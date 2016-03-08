@@ -1,0 +1,169 @@
+@font-face {
+	font-family: 'icone';
+	src: url('../font-awesome/fonts/fontawesome-webfont.woff')format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	color: #3b3b3b;
+}
+
+header,h2 {
+	font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+	border-bottom: 5px solid #073B5F;
+	background-color: #216B9B;
+	color: #ddd;
+	padding: 10px;	
+	text-shadow: 4px 4px 4px #000000;
+	font-size: 28px;
+}
+
+h2 {
+	border-top: 2px solid #3E81AE;
+	border-bottom: 1px solid #3E81AE;
+	background-color: #76B7E3;
+	padding-left: 10px;
+	margin: 0 0 0 -15px;
+	font-weight: normal;
+	text-shadow: 2px 2px 2px #FFF;
+	font-size: 22px;
+}
+
+label {
+	font-weight: bold;
+	margin-right: 13px;
+}
+
+footer {
+	text-align: center;
+}
+
+a:link{
+	text-decoration: none;
+}
+
+.social {
+	font-family: 'icone';
+	font-size: 50px;
+	margin-right: 15px;
+}
+
+.social-facebook::before {
+	content: '\f082';
+	color: #3B5998;
+}
+
+.social-plus::before {
+	content: '\f0d4';
+	color: #DD4B39;
+}
+
+.social-linkedin::before {
+	content: '\f08c';
+	color: #2E80BB;
+}
+
+.foto {
+	width: 130px;
+	float: right;
+	margin-right: 5em;
+	border: #fff 1em solid;
+	-webkit-box-shadow: 0px 0px 5px 5px #216B9B;
+	-moz-box-shadow: 0px 0px 5px 5px #216B9B;
+	box-shadow: 0px 0px 5px 5px #216B9B;
+}
+
+.topico {
+	background-color: #eee;
+	padding-left: 15px;
+	border: #ccc 1px dotted;
+}
+
+p { 
+    margin: 15px 0 0 0; 
+}
+
+.coluna{
+	-moz-column-count:2;
+	-webkit-column-count:2;
+	column-count:2;
+}
+
+
+@media screen and (max-width: 599px) {
+
+    body{
+    	font: 12px Trebuchet MS;
+        width: 80%;
+
+    }
+
+    .foto {
+	width: 80px;
+	margin-right: 1em;
+	-webkit-box-shadow: 0px 0px 2px 2px #216B9B;
+	-moz-box-shadow: 0px 0px 2px 2px #216B9B;
+	box-shadow: 0px 0px 2px 2px #216B9B;
+	}
+
+	.social {
+	font-size: 30px;
+	}
+
+	.coluna{
+	-moz-column-count:1;
+	-webkit-column-count:1;
+	column-count:1;
+	}
+
+	video {
+		width: 80%;
+	}
+
+	p { 
+    margin: 10px 0 0 0; 
+	}
+
+  
+}
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+
+	 body{
+    	font: 13px Trebuchet MS;
+        width: 90%;
+
+    }
+
+    .foto {
+	width: 100px;
+	margin-right: 2em;
+	-webkit-box-shadow: 0px 0px 3px 3px #216B9B;
+	-moz-box-shadow: 0px 0px 3px 3px #216B9B;
+	box-shadow: 0px 0px 3px 3px #216B9B;
+	}
+
+	.social {
+	font-size: 35px;
+	}
+
+	.coluna{
+	-moz-column-count:1;
+	-webkit-column-count:1;
+	column-count:1;
+	}
+
+	video {
+		width: 90%;
+	}
+
+	p { 
+    margin: 12px 0 0 0; 
+	}
+
+}
+

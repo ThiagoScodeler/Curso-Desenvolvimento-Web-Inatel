@@ -1,0 +1,75 @@
+body{
+	text-align: center;
+	background-color: #E1F8FA;
+	font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+	font-weight: normal;
+}
+
+label, legend{
+	font-size: 16px;
+}
+
+label{
+	padding-left: 10px;
+}
+
+legend {
+	text-transform: uppercase;
+}
+
+fieldset {
+	width: 350px;
+	margin: 30px auto;
+	background-color: #F1F6F6;
+}
+
+#botoes {
+	margin: 20px auto; 
+	display: none;
+}
+
+input[type=text], fieldset {
+	border-color: #09195B;
+	border-width: 1px;
+}
+
+input[type=text] {
+	padding-left: 5px;
+}
+
+#nome{
+	width: 20%;
+}
+
+#nota{
+	width: 5%;
+}
+
+ul {
+	list-style: none;
+	display: inline-table;
+}
+
+input[type=submit] {
+	border-color: #09195B;
+	background-color: #09195B;
+	color: #FFFFFF;
+}
+
+button {
+	border-color: #F58D1D;
+	background-color: #F58D1D;
+	color: #FFFFFF;
+}
+
+#alunos {
+	font-size: 14px;
+}
+
+#mediaAluno {
+	color: #AA0A0A;
+	font-size: 16px;
+}

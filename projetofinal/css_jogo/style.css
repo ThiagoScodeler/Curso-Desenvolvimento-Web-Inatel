@@ -1,0 +1,78 @@
+@-webkit-keyframes animacao {
+from {color:#FFF}
+to {color:#094A1B;}
+}
+
+h1 {
+	font-size: 26px;
+	font-style: italic;
+	-webkit-animation: animacao 5s;
+	text-align: center;
+}
+
+.frame{
+	background-color: #14C93B;
+	width: 1100px;
+	height: 560px;
+	margin: 10px;
+	margin-left: -25px;
+	margin-right: auto;
+	position: absolute;
+	border-radius: 5px;
+	-webkit-transition:background-color 2s;
+}
+
+.frame:hover {
+	 background-color:#1D7530;
+}
+
+.latas{
+	background-color: #B4FAC3;
+	height: 310px;
+	width: 1070px;
+	margin: auto;
+	border-radius: 5px;
+}
+
+.itens{
+	background-color: #B4FAC3;
+	width: 1070px;
+	height: 150px;
+	margin: auto;
+	border-radius: 5px;
+}
+
+h2 {
+	font-size: 21px;
+	color: #05330F;
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+}
+
+@-webkit-keyframes latas {
+from {-webkit-transform: rotateY(0deg);}
+to {-webkit-transform: rotateY(360deg);}
+}
+
+
+.img_latas{
+	margin: -40px -20px -80px 10px;
+	float: left;
+	height: 250px;
+	width: 350px;
+	-webkit-animation: latas 2s;
+}
+
+.img_itens{
+	margin-left: 65px; 
+	height: 100px;
+	width: 100px;
+	float: left;
+	-webkit-transform: rotate(15deg);
+}
+
+.img_itens:hover{
+	transition-duration: 2s;
+	-webkit-transform: rotate(360deg);
+}

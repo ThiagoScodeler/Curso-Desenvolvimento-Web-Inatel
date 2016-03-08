@@ -1,0 +1,49 @@
+body {
+    background-image: url("technology.jpg"); 
+    background-repeat: repeat;
+}
+
+fieldset, legend, input, textarea {
+    border: 1px solid #04507F;
+}
+
+fieldset {
+    width: 400px;
+    margin: 50px auto;
+    background: #AEABE8;
+}
+
+legend, input[type='submit'] {
+    font-weight: bold;
+    background: #342CC4;
+    color: #FFF;
+    text-transform: uppercase;  
+}
+
+legend {
+    padding: 2px 35px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: "Segoe UI","Arial","Times New Roman";
+}
+
+input {
+    width: 98%;
+    height: 20px;
+}
+
+textarea {
+    width: 98%;
+}
+
+input[type='submit'] {
+    background: #342CC4;
+    width: 100px;
+    height: 30px;
+    margin: 0 auto;
+    display: block;
+    float: center;
+}

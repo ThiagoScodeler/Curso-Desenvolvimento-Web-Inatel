@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Aprendendo a Reciclar</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<div class="frame">
+
+		<h1> Aprendendo a Reciclar - Arraste os itens para a reciclagem nas latas correspondentes</h1>
+
+		<div class="itens" style="-webkit-transition-timing-function: linear; -moz-transition-timing-function: linear; -o-transition-timing-function: linear;">
+			<h2>Itens:</h2>	
+
+			<img src="images/papel.png" class="img_itens" id="papel" draggable="true" ondragstart="return dragStart(event)">
+
+			<img src="images/metal.png" class="img_itens"  id="metal" draggable="true" ondragstart="return dragStart(event)">
+
+			<img src="images/plastico.png" class="img_itens" id="plastico" draggable="true" ondragstart="return dragStart(event)">
+
+			<img src="images/organico.png" class="img_itens"  id="organico" draggable="true" ondragstart="return dragStart(event)">
+
+			<img src="images/vidro.png" class="img_itens"  id="vidro" draggable="true" ondragstart="return dragStart(event)">
+
+			<img src="images/nao_reciclavel.png" class="img_itens"  id="naoreciclavel" draggable="true" ondragstart="return dragStart(event)">
+
+		</div>			
+
+		<div class="latas">
+			<h2>Latas:</h2>
+
+			<img src="images/lata_papel.png" class="img_latas" id="latapapel" ondrop="return dragDrop(event);" ondragover="return dragOver(event);">
+
+			<img src="images/lata_vidro.png" class="img_latas"  id="latavidro" ondrop="return dragDrop(event);" ondragover="return dragOver(event);">
+			
+			<img src="images/lata_plastico.png" class="img_latas"  id="lataplastico" ondrop="return dragDrop(event);" ondragover="return dragOver(event);">
+
+			<img src="images/lata_nao_reciclavel.png" class="img_latas"  id="latanaoreciclavel" ondrop="return dragDrop(event);" ondragover="return dragOver(event);">
+
+			<img src="images/lata_organico.png" class="img_latas"  id="lataorganico" ondrop="return dragDrop(event);" ondragover="return dragOver(event);">
+
+			<img src="images/lata_metal.png" class="img_latas"  id="latametal" ondrop="return dragDrop(event);" ondragover="return dragOver(event);">
+			
+		</div>
+
+	</div>
+
+	<script type="text/javascript" charset="utf-8" async defer>
+
+		function dragStart(event) {
+			event.dataTransfer.setData("id", event.target.getAttribute("id"));
+
+		}
+
+		function dragDrop(event) {
+
+			event.preventDefault();
+
+			var item = event.dataTransfer.getData("id"),
+			itemName = item.substring(0, item.length),
+
+			lata = event.target.getAttribute("id"),
+			lataName = lata.substring(4, lata.length);	
+
+			if(itemName == lataName) {
+
+				event.target.appendChild(document.getElementById(item));
+
+			}
+		}
+
+		function dragOver(event) {
+			return false;
+		}
+
+	</script>
+</body>
+</html>

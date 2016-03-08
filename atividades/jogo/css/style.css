@@ -1,0 +1,83 @@
+body {
+	background-image: url("technology.jpg");	
+	background-repeat: repeat;
+	font: 14px Trebuchet MS;
+	text-align: center;
+}
+
+@-webkit-keyframes animacao {
+from {color:#FFF}
+to {color:#094A1B;}
+}
+
+h1 {
+	font-style: italic;
+	-webkit-animation: animacao 5s;
+}
+
+.frame{
+	background-color: #14C93B;
+	width: 1200px;
+	height: 600px;
+	margin: auto; 
+	position: absolute; 
+	top: 0; 
+	right: 0; 
+	bottom: 0; 
+	left: 0;
+	border-radius: 5px;
+	-webkit-transition:background-color 2s;
+}
+
+.frame:hover {
+	 background-color:#1D7530;
+}
+
+.latas{
+	background-color: #B4FAC3;
+	height: 340px;
+	width: 1175px;
+	margin: auto;
+	border-radius: 5px;
+}
+
+.itens{
+	background-color: #B4FAC3;
+	width: 1175px;
+	height: 150px;
+	margin: auto;
+	border-radius: 5px;
+}
+
+h2 {
+	color: #05330F;
+	font-style: italic;
+	font-weight: bold;
+}
+
+@-webkit-keyframes latas {
+from {-webkit-transform: rotateY(0deg);}
+to {-webkit-transform: rotateY(360deg);}
+}
+
+
+.img_latas{
+	margin: -40px 30px -80px 10px;
+	float: left;
+	height: 250px;
+	width: 350px;
+	-webkit-animation: latas 2s;
+}
+
+.img_itens{
+	margin-left: 80px; 
+	height: 100px;
+	width: 100px;
+	float: left;
+	-webkit-transform: rotate(15deg);
+}
+
+.img_itens:hover{
+	transition-duration: 2s;
+	-webkit-transform: rotate(360deg);
+}

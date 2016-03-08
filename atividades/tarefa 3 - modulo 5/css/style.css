@@ -1,0 +1,51 @@
+body {
+	font: 16px Trebuchet MS;
+	background-color: #E1E0E0;
+	text-align: center;
+}
+
+li {
+	list-style: none;
+}
+
+.brasil {
+	color: #103C06;
+}
+
+.alemanha {
+	color: #5B0303;
+}
+
+.argentina {
+	color: #060241;
+}
+
+.holanda {
+	color: #A45205;
+}
+
+input[type='button'] {
+	width: 100px;
+	height: 30px;
+	color: white;
+}
+
+#botaoVerde {
+	background-color: green;
+	border-color: green;
+}
+
+#botaoVermelho {
+	background-color: red;
+	border-color: red;
+}
+
+#botaoAzul {
+	background-color: blue;
+	border-color: blue;
+}
+
+#botaoLaranja {
+	background-color: orange;
+	border-color: orange;
+}
